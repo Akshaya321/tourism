@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration form</title>
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+                background-image: url(./image3.jpg);
+                background-size: cover;
+                color:white;
+            }
+            .container{
+                top: 50%;
+                left: 50%;
+                position: absolute;
+                transform: translate(-50%,-50%);
+                padding: 20px;
+                margin-left: 50px;
+            }
+            .card{
+                padding:60px 40px 50px 40px;
+                background:crimson(50, 50, 50);
+                border-radius: 10px;
+                padding: 10px;
+            }
+            #button{
+                border: 20px; 
+                padding: 10px 10px;
+                background: rgb(41, 7, 3);
+                color: rgb(238, 230, 230);
+                margin-top:10px;
+                border: none;
+                outline: none;
+                margin-left:10px;
+                margin-right: 50%;
+            
+    
+
+            }
+            a{
+                font-size: 100px;
+            }
+            input{
+                background-size: cover;
+                box-sizing: border-box;
+                border-radius: 10px;
+                border-width: 3px;
+                line-height: normal;
+                padding: auto;
+                font-size: medium;
+                background: rgb(230, 224, 215);
+            }
+            h1{
+                color: turquoise;
+            }
+            h2{
+                color: tomato;
+            }
+
+           
+        </style>
+    </head>
+    <body>
+        <div class="container">
+    
+            <div class="card">
+        
+        <h1>CUSTOMER REGISTRATION FORM</h1>
+        <div class="register">
+            <form method="post"  action="customerregconnection.php">
+                <h2>Register here</h2>
+                <label>Name:</label><br><b></b>
+                <input type="text" name="name"
+                placeholder="enter u r first name" required><br><br>
+                <label>Address:</label><br><b></b>
+                <input type="text" name="address" 
+                placeholder="enter u r address" required><br><br>
+                
+                <label>Mobile number:</label><br><b></b>
+                <input type="text" name="mobile" 
+                placeholder="mobile number" pattern="[0-9]+" maxlength="10" minlength="10" required><br><br>
+
+                <label>District:</label><br>
+                <input type="text" name="district" 
+                placeholder="enter u r district" required><br><br>
+               
+
+               
+                <label>email</label><br>
+                <input type="email" name="email" 
+                placeholder="enter u r username" required><br><br>
+
+                <label>password:</label><br>
+                <input type="password" name="password" 
+                placeholder="enter u r pswd" required><br><br>
+                
+                
+                <input type="Submit" value="Submit" >
+         </div>
+            </div>
+
+             <a href="login.html"></a>
+            </form>
+        </div>
+    </body>
+</html>
+<a href="customerregconnection.php"

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <title>indexpage</title>
+    <meta charset="UTF-8">
+     <link rel="stylesheet" href="css/stylehome.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <style>
+         /*index design */
+{
+    margin :0;
+    padding :0;
+}@import"https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+
+.main {
+    width: 100%;
+    background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0.5)100%),url(background.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 110vh;
+}
+
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.logo{
+    color:white;
+    font-size: 35px;
+    font-family: Arial;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+}
+.logo span{
+    color: red;
+    font-size: 35px;
+}
+ 
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 18px;
+}
+
+ul li a{
+    text-decoration:none;
+    color: aliceblue;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease; 
+}
+
+ul li a:hover{
+    color: red;
+}
+
+
+
+.btn{
+    width: 100px;
+    height: 40px;
+    background: red;
+    border: 2px solid red;
+    margin-top: 13px;
+    color: white;
+    font-size:15px ;
+    border-bottom-right-radius:5px ;
+    border-bottom-right-radius:5px;
+}
+
+.btn:focus{
+    outline: none;
+}
+
+.srch:focus{
+    outline: none;
+}
+
+.content{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: white;
+    position: relative;
+}
+
+.content .par{
+    padding: 20px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+
+.content h1{
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+}
+ 
+.content .cn{
+    width: 160px;
+    height: 40px;
+    background: red;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+}
+
+.content.cn a{
+    text-decoration: none;
+    color: black;
+    transition: .3s ease;
+}
+
+.cn:hover{
+    background-color: white;
+
+}
+.content span{
+    color: red;
+    font-size: 60px;
+}
+ 
+ /*footer */
+  .footer{
+    background: #303036;
+    color: #d3d3d3;
+    height: 400px;
+    position: relative;
+  }
+  .footer .footer-content{
+      border: 1px solid red;
+      height: 350px;
+      display: flex;
+
+  }
+  .footer .footer-content .footer-section{
+      flex: 1;
+      padding: 25px;
+      border: 1px solid white;
+  }
+  .footer .footer-content h1,
+  .footer.footer-content h2{
+      color: white;
+  }
+  .footer .footer-content .about h1 span{
+      color: red;
+  }
+  .footer .footer-content .about.contact span{
+      display: block;
+      font-size: 1.1cm;
+      margin-bottom: 8px;
+  }
+  .footer .footer-content .link {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 1.2px;
+      color: white;
+  }
+ 
+  .footer .footer-bottom{
+    background: #343a40;
+    color: #686868;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding-top: 20px;
+  
+  }
+  
+     </style>
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo"><span>T</span>OURISM<br><span>P</span>ORTAL </h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>HOME</a></li>
+                    <li><a href="register.html"><i class="fa fa-user"></i>REGISTRATION</a></li>
+                    <li><a href="adminlog.php"><i class="fa fa-lock lock"></i>ADMIN LOGIN</a></li>
+                    <li><a href="login.html"><i class="fa fa-lock lock"></i>CUSTOMER LOGIN</a></li>
+                    <li><a href="aboutus.html"><i class="fa fa-book"></i>ABOUT US</a></li>
+                 </ul>
+            </div>
+        
+            
+        </div>
+            <div class="content">
+                <marquee direction="left">
+                <h1><span><br>W</span>elcome to a<span>L</span>andlocked<span>D</span>istrict is one of <span>M</span>ost nature rich areas of Kerala </h1>
+                </marquee>
+               
+            </div>
+        
+    </div>
+        
+        <!--footer-->
+        <div class="footer">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h1 class="logo-text"><span>T</span>OURISM PORTAL</h1>
+                    <p>This website is here to help travelers can sreach and booking packages.This sit can provide information about various cities their important and visiting place with complete description and some images to recognize them easily. 
+                        
+                    </p>
+                    <div class="contact">
+                        <span><i class="fa fa-phone"></i>&nbsp; 9207902468</span>
+                        <span><i class="fa fa-envelope"></i>&nbsp;tourismportal@gmail.com</span>
+                    </div>
+                    <div class="socials">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section Links">
+                  <h2>Quick Links</h2>
+                  <br>
+                <ul>
+                    <a href="index.html">
+                      <li>Home</li>
+                    </a>
+                    <a href="cus reg.html">
+                      <li>registration</li>
+                    </a>
+                    <a href="# ">
+                      <li>terms and conditions</li>
+                    </a>
+                </ul>
+            </div>
+                <div class="footer-section contact">
+                    <div class="contact">
+                        <br>
+                        <h1>contact us</h1>
+                        <br>
+                        <span><i class="fa fa-phone"></i>&nbsp;9207902468</span>
+                        <span><i class="fa fa-envelope"></i>&nbsp;tourismportal@gmail.com</span>
+                    </div>  
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+             &copy;akshayasunil005@gmail.com | Designed by Akshaya sunil
+             </div>
+        </div>
+
+
+        <!--//footer-->>
+
+    
+</body>
+</html>

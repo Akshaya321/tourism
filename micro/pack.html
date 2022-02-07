@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product add</title>
+</head>
+<style>
+*{
+    padding: 0%;
+    margin: 0%;
+} 
+body{
+    background-image: url('./veg1.jpg');
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-image: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    position: fixed;
+    align-items: center;
+    text-align: center;
+
+}.form-horizontal {
+        box-sizing: content-box;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+       align-items: center;
+        width: 400px;
+        height: 500px;
+        transform: translate(-50%, -50%);
+    }
+    .form-horizontal input{
+        width: 100%;
+        margin-bottom: 20px;
+        top: 50%;
+        left: 50%;
+    }
+    
+    
+    input{
+        width: 100%;
+        background: none;
+        border: 1px solname #fff;
+        border-radius: 3px;
+        padding: 6px 15px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        font-size: 16px;
+        color: #fff;
+    }
+    button [type="submit"]
+    { 
+        background: red;
+    border: 0;
+    cursor: pointer;
+    color: #3e3d3d;
+    }
+    
+    button [type="submit"] :hover
+
+    {background: #a4b15c; transition:.6s;
+        font-size: 16px;
+         font-weight: bold;
+         margin: 20px 0;
+    padding: 10px 15px;
+    width: 50%;
+    border-radius: 5px;
+    border: 0;
+    text-align: center;
+    align-items: center;
+    
+    }
+     ::placeholder{color: #fff;}
+    .form-horizontal{
+        width:  320px ;
+         background: #3e3d3d;
+          padding: 40px 20px;
+           box-sizing: border-box;
+            position: fixed;
+             left:50%; top: 50%; 
+             transform: translate(-50%, -50%);
+    }
+             h1{text-align: center center;
+                color: aqua;
+                  font-weight: normal;
+                     margin-bottom: 20px ;
+                     transition: -50%,50%;;
+
+    }
+
+</style>
+<body>
+    <section class="content-header">
+        <div class="content-header-left">
+            <h1>Add Product</h1>
+        </div>
+        <div class="content-header-right">
+            <a href="#" class="btn btn-primary btn-sm">View All</a>
+        </div>
+    </section>
+    
+    
+    <section class="content">
+    
+        <div class="row">
+            <div class="col-md-12">
+    
+                
+    
+                <form class="form-horizontal" action="" method="post" enctype="multipart/form-data">
+    
+                    <div class="box box-info">
+                        <div class="box-body">
+                            
+                            
+                            <div class="form-group">
+                                <label for="" class="col-sm-3 control-label">Product Name <span>*</span></label>
+                                <div class="col-sm-4">
+                                    <input type="text" name="p_name" class="form-control">
+                                </div>
+                            </div>	
+                            <div class="form-group">
+                                <label for="" class="col-sm-3 control-label">Old Price</label>
+                                <div class="col-sm-4">
+                                    <input type="text" name="p_old_price" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-sm-3 control-label">Current Price <span>*</span></label>
+                                <div class="col-sm-4">
+                                    <input type="text" name="p_current_price" class="form-control">
+                                </div>
+                            </div>	
+                            <div class="form-group">
+                                <label for="" class="col-sm-3 control-label">Quantity <span>*</span></label>
+                                <div class="col-sm-4">
+                                    <input type="text" name="p_qty" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-sm-3 control-label">Featured Photo <span>*</span></label>
+                                <div class="col-sm-4" style="padding-top:4px;">
+                                    <input type="file" name="p_featured_photo">
+                                </div>
+                            </div>
+                           
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-sm-3 control-label">Description</label>
+                                <div class="col-sm-8">
+                                    <textarea name="p_description" class="form-control" cols="30" rows="10" id="editor1"></textarea>
+                                </div>
+                           
+                            
+                            <div class="form-group">
+                                <label for="" class="col-sm-3 control-label"></label>
+                                <div class="col-sm-6">
+                                    <button type="submit" class="btn btn-success pull-left" name="form1">Submit</button>
+                                <br><br></div>
+                            </div>
+                        </div>
+                    </div>
+    
+                </form>
+    
+    
+            </div>
+        </div>
+    
+    </section>
+    
+    
+</body>
+</html>

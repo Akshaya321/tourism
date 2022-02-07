@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <style>
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        @import"https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"; 
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 14px;
+            background: #9e1c1c;
+        }
+        .wrapper{
+            background-color: #fff;
+            width: 500px;
+            padding: 25px;
+            margin: 50px auto 0;
+            border-top: 15px solid #f5ba1a;
+            border-left: 15px solid #f5ba1a;
+            border-right: 15px solid #f5ba1a;
+            border-bottom: 15px solid #f5ba1a;
+            box-shadow: 0 0 3px rgba(0,0,0,0.1);
+        }
+        .wrapper h2{
+            font-size: 24px;
+            line-height: 24px;
+            padding-bottom: 30px;
+            text-align: center;
+        }
+        .input-name{
+            width: 90%;
+            position: relative;
+            margin: 20px auto;
+        }
+        .lock{
+            padding: 8px 11px;
+        }
+        .phone-square{
+            padding: 8px 11px;
+        }
+        .address-book{
+            padding: 8px 11px;
+        }
+        .location-arrow{
+            padding: 8px 11px;
+        }
+        .text-name{
+            width: 100%;
+            padding: 8px 0 8px 40px;
+        }
+        .input-name i{
+            position: absolute;
+            font-size: 18px;
+            border-right: 1px solid #cccccc;
+        }
+        .email{
+            padding: 8px;
+        }
+        .text-name, .name{
+            border: 1px solid #cccccc;
+            outline: none;
+            -webkit-transition: all 0.30s ease-in-out;
+            -moz-transition: all 0.30s ease-in-out;
+            -ms-transition: all 00.30s ease-in-out;
+            transition: all 0.30s ease-in-out;
+
+        }
+        .text-name:hover, .name:hover{
+            background-color: #fafafa;
+        }
+        .text-name:focus, .name:focus{
+            -webkit-box-shadow:0 0 2px 1px rgba(255,169,0,0,5);
+            -moz-box-shadow:0 0 2px 1px rgba(255,169,0,0,5);
+            box-shadow:0 0 2px 1px rgba(255,169,0,0,5);
+            border: 1px solid #f5ba1a;
+            background: #fafafa;
+        }
+        .button{
+            background-color: #f5ba1a;
+            height: 35px;
+            line-height: 35px;
+            width: 100%;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            color: #fff;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .button:hover{
+            background-color: #f5ba1a;
+        }
+        .button:focus{
+            background-color: #f5ba1a;
+        }
+        @media(max-width:480px){
+            .wrapper{
+                width: 100%;
+            }
+            .input-name{
+                margin-bottom: -10px;
+            }
+        }
+    </style>
+    <left><button><a href=index.html>HOME</a></button></left>
+    
+</head>
+<body>
+    <div class="wrapper">
+        <h2>REGISTRATION FORM</h2>
+        <div class="form-conteniar">
+            <form method="post"  action="customerregconnection.php">
+                <div class="input-name">
+                    <i class="fa fa-user lock"></i>
+                    <input type="text" placeholder="name" name="name" class="text-name" required>
+                </div>
+                <div class="input-name">
+                    <i class="fa fa-address-book address-book"></i>
+                    <input type="text" placeholder="address" name="address" class="text-name" required>
+                </div>
+                <div class="input-name">
+                    <i class="fa fa-phone-square phone-square"></i>
+                    <input type="text" placeholder="mobile" name="mobile" pattern="[0-9]+" maxlength="10" minlength="10" class="text-name" required>
+                </div>
+                <div class="input-name">
+                    <i class="fa fa-location-arrow location-arrow"></i>
+                    <input type="text" placeholder="district" name="district" required class="text-name">
+                </div>
+                <div class="input-name">
+                    <i class="fa fa-envelope email"></i>
+                    <input type="email" placeholder="email" name="email" required class="text-name">
+                </div>
+                <div class="input-name">
+                    <i class="fa fa-lock lock"></i>
+                    <input type="password" placeholder="password" name="password" required class="text-name">
+                </div>
+                <div class="input-name">
+                    <input class="button" type="submit" value="register">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

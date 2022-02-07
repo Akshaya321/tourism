@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Add package</title>
+<style>
+    body{
+        background-image: url('./pack.jpg');
+        background-repeat:no-repeat;
+        background-size:cover;
+        font-size: large;
+        color: beige;
+    }
+    .h1{
+        color: red;
+    }
+    
+</style>
+</head>
+
+<body>
+<form action="pack.php" method="post" >
+<div class="h1">
+<br><br>
+<h1><center>ADD PACKAGE</center></h1></div>
+<table align="center" border="0">
+<tr><td>Package Name:</td><br>
+<td><input type="text" name="packagename" required autofocus/></td></tr>
+<tr><td>Location:</td>
+<td><input type="text" name="location"/></td></tr>
+<tr><td>Price</td>
+<td><input type="number" name="price"/></td></tr>
+<tr><td>Features</td>
+<td><input type="text" name="features"/></td></tr>
+<tr><td></td>
+<tr><td>Details</td>
+<td><input type="text" name="details"/></td></tr>
+<tr><td></td>   
+<tr><td>Image:</td>
+<td><input type="file" name="image"required autofocus /></td></tr>
+</table>
+<center><input type="submit" value="ADD"></center>
